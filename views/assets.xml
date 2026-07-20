@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" inherit_id="web.assets_backend" name="Clear All Many2many Tags Assets">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/sm_clear_m2m_tags/static/src/js/clear_m2m_tags.js"/>
+            <link rel="stylesheet" type="text/scss" href="/sm_clear_m2m_tags/static/src/scss/clear_m2m_tags.scss"/>
+        </xpath>
+    </template>
+</odoo>
