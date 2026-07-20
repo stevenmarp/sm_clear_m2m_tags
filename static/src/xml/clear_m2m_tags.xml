@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="web.Many2ManyTagsField" t-inherit-mode="extension" owl="1">
+        <xpath expr="//TagsList" position="after">
+            <button t-if="!props.readonly and tags.length"
+                    class="btn btn-link p-0 ms-1 o_clear_all_tags text-muted"
+                    tabindex="-1"
+                    title="Clear all"
+                    t-on-click.stop.prevent="() => this.clearAllTags()">
+                <i class="fa fa-times-circle"/>
+            </button>
+        </xpath>
+    </t>
+</templates>
